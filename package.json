@@ -1,0 +1,84 @@
+{
+  "name": "git-cooperate-with-the-node",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "config": {
+    "commitizen": {
+      "path": "./cz-custom"
+    },
+    "changelog": "https://github.com/tyankatsu0105/git-cooperate-with-the-node"
+  },
+  "scripts": {
+    "cmt": "git-cz",
+    "precmt": "lint-staged",
+    "lint-prettier": "run-s lint:script format:style prettier:md",
+    "release:major": "changelog -M -u $npm_package_config_changelog && git add CHANGELOG.md && git commit --no-verify -m 'docs(CHANGELOG.md): :bookmark: updated CHANGELOG.md' && npm version major -m 'chore: :tada: updated version' && git push origin && git push origin --tags",
+    "release:minor": "changelog -m -u $npm_package_config_changelog && git add CHANGELOG.md && git commit --no-verify -m 'docs(CHANGELOG.md): :bookmark: updated CHANGELOG.md' && npm version minor -m 'chore: :tada: updated version' && git push origin && git push origin --tags",
+    "release:patch": "changelog -p -u $npm_package_config_changelog && git add CHANGELOG.md && git commit --no-verify -m 'docs(CHANGELOG.md): :bookmark: updated CHANGELOG.md' && npm version patch -m 'chore: :tada: updated version' && git push origin && git push origin --tags",
+    "lint:style": "stylelint **/*.scss --fix --cache --cache-location '.stylelintcache'",
+    "prettier:style": "prettier --write **/*.scss",
+    "format:style": "run-s prettier:style lint:style",
+    "lint:script": "eslint --fix **/*.js",
+    "prettier:md": "prettier --write ./README.md",
+    "ci:eslint": "eslint **/*.js",
+    "ci:stylelint": "stylelint **/*.scss"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "*.scss": [
+        "prettier --write",
+        "stylelint --fix --cache --cache-location '.stylelintcache'",
+        "git add"
+      ],
+      "*.js": [
+        "prettier --write",
+        "eslint --fix",
+        "git add"
+      ],
+      "*.md": [
+        "prettier --write",
+        "git add"
+      ]
+    },
+    "ignore": [
+      "node_modules/**/*",
+      "cz-custom/**/*"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^7.0.0",
+    "@commitlint/config-angular": "^7.0.1",
+    "@commitlint/prompt-cli": "^7.0.0",
+    "commitizen": "^2.10.1",
+    "commitlint": "^7.0.0",
+    "commitlint-circle": "^1.0.0",
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-react": "^7.11.1",
+    "generate-changelog": "^1.7.1",
+    "husky": "^1.0.0-rc.13",
+    "lint-staged": "^7.2.2",
+    "npm-run-all": "^4.1.3",
+    "prettier": "^1.14.2",
+    "stylelint": "^9.4.0",
+    "stylelint-config-prettier": "^4.0.0",
+    "stylelint-config-recess-order": "^2.0.0",
+    "stylelint-config-sass-guidelines": "^5.0.0"
+  },
+  "dependencies": {
+    "lodash.map": "^4.6.0",
+    "longest": "^2.0.1",
+    "right-pad": "^1.0.1",
+    "word-wrap": "^1.2.3"
+  }
+}

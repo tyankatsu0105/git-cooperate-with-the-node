@@ -1,0 +1,56 @@
+{
+  "types": {
+    "feat": {
+      "description": "新機能",
+      "title": "機能"
+    },
+    "fix": {
+      "description": "バグ修正",
+      "title": "バグ修正"
+    },
+    "docs": {
+      "description": "ドキュメントのみの変更",
+      "title": "ドキュメント"
+    },
+    "style": {
+      "description": "フォーマットの変更（コードの動作に影響しないスペース、フォーマット、セミコロンなど）",
+      "title": "スタイル"
+    },
+    "refactor": {
+      "description": "リファクタリングのための変更（機能追加やバグ修正を含まない）",
+      "title": "リファクタ"
+    },
+    "perf": {
+      "description": "パフォーマンスの改善のための変更",
+      "title": "パフォーマンス改善"
+    },
+    "test": {
+      "description": "不足テストの追加や既存テストの修正",
+      "title": "テスト"
+    },
+    "build": {
+      "description": "ビルドシステムや外部依存に関する変更（スコープ例: gulp, broccoli, npm）",
+      "title": "ビルド"
+    },
+    "ci": {
+      "description": "CI用の設定やスクリプトに関する変更（スコープ例: Travis, Circle, BrowserStack, SauceLabs)",
+      "title": "CI"
+    },
+    "chore": {
+      "description": "その他の変更（ソースやテストの変更を含まない）",
+      "title": "雑務"
+    },
+    "revert": {
+      "description": "以前のコミットに復帰",
+      "title": "復帰"
+    },
+    "breaking": {
+      "description": "互換性のない破壊的変更を伴う",
+      "title": "破壊的変更"
+    },
+    "other": {
+      "description": "上記コマンド以外",
+      "title": "上記コマンド以外"
+    }
+  }
+}

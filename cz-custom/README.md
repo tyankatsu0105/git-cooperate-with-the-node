@@ -1,0 +1,1 @@
+[cz-conventional-changelog-ja](https://github.com/AquiTCD/cz-conventional-changelog-ja)をカスタマイズしたものです。
