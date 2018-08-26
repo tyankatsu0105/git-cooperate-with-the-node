@@ -36,21 +36,9 @@
       "description": "CI用の設定やスクリプトに関する変更（スコープ例: Travis, Circle, BrowserStack, SauceLabs)",
       "title": "CI"
     },
-    "chore": {
-      "description": "その他の変更（ソースやテストの変更を含まない）",
-      "title": "雑務"
-    },
     "revert": {
       "description": "以前のコミットに復帰",
       "title": "復帰"
-    },
-    "breaking": {
-      "description": "互換性のない破壊的変更を伴う",
-      "title": "破壊的変更"
-    },
-    "other": {
-      "description": "上記コマンド以外",
-      "title": "上記コマンド以外"
     }
   }
 }
