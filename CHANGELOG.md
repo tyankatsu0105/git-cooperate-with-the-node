@@ -1,3 +1,9 @@
+### 1.3.0 (2018-08-30)
+
+##### Performance Improvements
+
+*  :fire: 不要なモジュール削除 ([3755dfa9](https://github.com/tyankatsu0105/git-cooperate-with-the-node/commit/3755dfa9094039e4a086eb983291c336ff23bc0b))
+
 ### 1.2.0 (2018-08-26)
 
 ##### Bug Fixes
