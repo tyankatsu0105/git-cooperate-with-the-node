@@ -54,10 +54,8 @@
   "devDependencies": {
     "@commitlint/cli": "^7.0.0",
     "@commitlint/config-angular": "^7.0.1",
-    "@commitlint/prompt-cli": "^7.0.0",
     "commitizen": "^2.10.1",
     "commitlint": "^7.0.0",
-    "commitlint-circle": "^1.0.0",
     "eslint": "^5.4.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^3.0.1",

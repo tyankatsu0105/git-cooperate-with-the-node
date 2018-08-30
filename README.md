@@ -12,16 +12,8 @@ This settings are comfortable for you when use `git commit`.
 
 After run `git add`
 
-### If you are using yarn
-
 ```
 yarn cmt
-```
-
-### If you are using npm
-
-```
-npm run cmt
 ```
 
 ## generate-changelog
