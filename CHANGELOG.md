@@ -1,3 +1,17 @@
+#### 1.3.1 (2018-08-30)
+
+##### Documentation Changes
+
+* **CHANGELOG.md:**  :bookmark: updated CHANGELOG.md ([f62b65c4](https://github.com/tyankatsu0105/git-cooperate-with-the-node/commit/f62b65c42f14791cfd28233ced90293bdb370c42))
+
+##### New Features
+
+*  :tada: updated version ([96499ead](https://github.com/tyankatsu0105/git-cooperate-with-the-node/commit/96499eadd43396b3bbb86303b040aed5fe0cf161))
+
+##### Performance Improvements
+
+*  :fire: 不要なモジュール削除 ([3755dfa9](https://github.com/tyankatsu0105/git-cooperate-with-the-node/commit/3755dfa9094039e4a086eb983291c336ff23bc0b))
+
 ### 1.3.0 (2018-08-30)
 
 ##### Performance Improvements
